@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'seagull';
+  src: url(./Posterama.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+body {
   background-color: #282c34;
-  min-height: 100vh;
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+.App {
   display: flex;
-  flex-direction: column;
+}
+
+.logotype {
+  font-family: seagull;
+}
+
+.nav {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-device-width: 768px) {
+  .logo {
+    width: 15vw;
+    margin-right: 5vw;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-device-width: 1024px) {
+  .logo {
+    width: 8vw;
+    margin-right: 1vw;
   }
-  to {
-    transform: rotate(360deg);
+
+  .logotype {
+    font-size: 3vw;
   }
+}
+
+.left-column,
+.right-column {
+  width: 20vw;
+  height: 100vh;
+}
+
+.main-column {
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
+  width: 60vw;
+}
+
+.menu-content {
+  width: 70%;
+  margin: 0 auto;
+  font-family: seagull;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.menu-list li {
+  margin-bottom: 1.5vw;
 }

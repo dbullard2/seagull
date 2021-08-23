@@ -1,0 +1,9 @@
+- squawking
+    - image uploads
+- editing profile
+    - procedural seagull pro pictures
+- timeline
+    - following
+    - squawks show up in chronological order
+- search
+- rename navbar component
